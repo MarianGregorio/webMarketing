@@ -159,7 +159,7 @@ a{
 }
 @media only screen and (min-width:600px){
     .parrafo{
-        display: initial;
+        display: block;
     }
     .sectionText{
         display: flex;
@@ -170,4 +170,17 @@ a{
         font-size: 1rem;
         margin-bottom: 10px;
     }
+    .section2 p{
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .articleContainer{
+        padding-bottom: 10px;
+    }
+    .seccionImg img{
+        margin-top: 20px;
+    }
+    
 }
