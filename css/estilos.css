@@ -182,5 +182,15 @@ a{
     .seccionImg img{
         margin-top: 20px;
     }
+    .footerLeft h5{
+        width: 70%;
+        text-align: center;
+    }
+    .footerLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
