@@ -148,11 +148,63 @@ a{
 }
 /*Fin estilos main index*/
 
+/*Inicio main informacion*/
+.informacion{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.infoText{
+    text-align: justify;
+    width: 70%;
+    margin-top: 20px;
+}
+.infoText p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.infoText h1{
+    font-size: 1.2rem;
+    border-top: 2px solid rgb(119, 0, 255);
+    width: 70%;
+}
+.infoImg img{
+    width: 300px;
+}
+.informacion2{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+}
+.informacion2 h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.articleInfo h4{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.articleInfo{
+    background-color: rgb(119, 0, 255);
+    color: rgb(170, 167, 167);
+    margin: 10px 0px;
+    width: 70%;
+    box-shadow: 5px 5px 3px rgb(170, 167, 167);
+}
+.containerArt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /*Inicio estilos footer*/
 .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .footerLeft{
     text-align: center;
