@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Elementos de use general*/
 a{
     text-decoration: none;
 }
@@ -23,6 +24,7 @@ a{
 .borrado{
     display: none;
 }
+/* header y menu de navegacion*/
 #header{
     height: 6rem;
     display: flex;
@@ -64,6 +66,9 @@ a{
 .navContacto a:hover{
     border:none !important;
 }
+/*Fin estilos menu*/
+
+/*Inicio estilos main index*/
 #main{
     background-image: linear-gradient( to right,#fff,rgb(170, 167, 167));
 }
@@ -141,6 +146,9 @@ a{
     margin-top: 5px;
     color: blueviolet;
 }
+/*Fin estilos main index*/
+
+/*Inicio estilos footer*/
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +176,7 @@ a{
 .footerRight{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/*Fin estilos footer*/
 @media only screen and (min-width:600px){
     .parrafo{
         display: block;
