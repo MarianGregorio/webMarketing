@@ -172,6 +172,9 @@ a{
 }
 .infoImg img{
     width: 300px;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
 }
 .informacion2{
     text-align: center;
@@ -204,7 +207,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 .footerLeft{
     text-align: center;
