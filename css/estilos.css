@@ -30,6 +30,10 @@ a{
     justify-content: space-around;
     background-color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
 }
 .logo{
     text-align: center;
@@ -199,5 +203,81 @@ a{
         justify-content: center;
         align-items: center;
     }
-    
+}
+@media only screen and (min-width:715px){
+    #header{
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        position: sticky;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+    }
+    .logo i{
+        font-size: 2.5rem;
+        margin-top: 0;
+        color: rgb(119, 0, 255);
+    }
+    .navbar ul{
+        margin-top: 1rem;
+    }
+    .section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sectionText h1{
+        font-size: 1.9rem;
+    }
+    .sectionText a{
+        font-size: 1rem;
+    }
+    .seccionImg img{
+        width: 400px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section2 h2, p{
+        font-size: 1.9rem;
+        width: 70%;
+    }
+    .section2 p{
+        font-size: 1rem;
+    }
+    .articleContainer{
+        display: grid;
+        grid-template-areas: 
+        "articulo1 articulo2 articulo3 articulo4";
+        text-align: center;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        margin-top: 20px;
+        padding-bottom: 2rem;
+    }
+    .article h4{
+        margin-top: 10px;
+    }
+    .article i{
+        font-size: 1.5rem;
+        margin-top: 5px;
+        color: blueviolet;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .footerLeft h5{
+        font-size: 1rem;
+    }
 }
