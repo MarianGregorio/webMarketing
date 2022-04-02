@@ -281,3 +281,28 @@ a{
         font-size: 1rem;
     }
 }
+@media only screen and (min-width:1000px){
+    .borrado{
+        display: block;
+    }
+    .footerLeft{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 30%;
+    }
+    .footerLeft h5{
+        text-align: justify;
+    }
+    .footerCenter{
+        font-size: 0.9rem;
+    }
+    .footerRight{
+        font-size: 0.9rem;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
