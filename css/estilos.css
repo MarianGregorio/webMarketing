@@ -189,6 +189,7 @@ a{
 .articleInfo h4{
     font-size: 0.9rem;
     font-weight: 500;
+    padding-bottom: 5px;
 }
 .articleInfo{
     background-color: rgb(119, 0, 255);
@@ -202,6 +203,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+/*Fin main informacion*/
+
 /*Inicio estilos footer*/
 .footer{
     display: flex;
@@ -235,6 +238,7 @@ a{
     .parrafo{
         display: block;
     }
+    /*Indec*/
     .sectionText{
         display: flex;
         flex-direction: column;
@@ -255,6 +259,14 @@ a{
     }
     .seccionImg img{
         margin-top: 20px;
+    }
+    /*Informacion*/
+    .infoText h1{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .infoText p{
+        font-size: 1rem;
     }
     .footerLeft h5{
         width: 70%;
@@ -287,6 +299,7 @@ a{
     .navbar ul{
         margin-top: 1rem;
     }
+    /*index*/
     .section{
         display: flex;
         justify-content: space-evenly;
@@ -332,6 +345,16 @@ a{
         font-size: 1.5rem;
         margin-top: 5px;
         color: blueviolet;
+    }
+    /*Informacion*/
+    .infoImg img{
+        width: 400px;
+        margin-top: 10px;
+    }
+    .infoText{
+        padding-left: 70px;
+        width: 100%;
+        margin-left: 80px;
     }
     .footer{
         display: flex;
