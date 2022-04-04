@@ -391,4 +391,18 @@ a{
         justify-content: space-around;
         align-items: center;
     }
+    .informacion{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .infoText{
+        width: 50%;
+    }
+    .infoImg img{
+        margin-right: 50px;
+    }
+    .articleInfo{
+        width: 55%;
+    }
 }
