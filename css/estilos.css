@@ -21,6 +21,14 @@ a{
         transform: translate(0);
     }
 }
+@keyframes movimiento2{
+    from{
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
 .borrado{
     display: none;
 }
@@ -66,9 +74,9 @@ a{
 .navContacto a:hover{
     border:none !important;
 }
-/*Fin estilos menu*/
+/*Fin estilos menu----------------------------------*/
 
-/*Inicio estilos main index*/
+/*Inicio estilos main index--------------------------*/
 #main{
     background-image: linear-gradient( to right,#fff,rgb(170, 167, 167));
 }
@@ -146,9 +154,9 @@ a{
     margin-top: 5px;
     color: blueviolet;
 }
-/*Fin estilos main index*/
+/*Fin estilos main index------------------------------------------*/
 
-/*Inicio main informacion*/
+/*Inicio main informacion----------------------------------------*/
 .informacion{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
@@ -203,9 +211,66 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
-/*Fin main informacion*/
+/*Fin main informacion----------------------------------------*/
 
-/*Inicio estilos footer*/
+/*Inicio main contacto-----------------------------*/
+.titleFormulario{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    text-align: end;
+    font-weight: 600;
+    width: 65%;
+    border-bottom: 4px solid rgb(119, 0, 255);
+    padding-top: 10px;
+}
+.containerContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.imgContacto img{
+    width: 300px;
+    animation-name: movimiento2;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+}
+.formulario{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 350px;
+    width: 280px;
+    background-color: #353435;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px rgb(170, 167, 167);
+    border: 1px solid rgb(170, 167, 167);
+}
+.formText{
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #e4e2de;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.centrado{
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(170, 167, 167);
+    font-weight: 400;
+}
+.formTamaño{
+    width: 90%;
+    height: 1.8rem;
+    background-color: #ada9a6;
+}
+.formTextEnviar{
+    color: #fff;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    background-color: rgb(119, 0, 255);
+    border: 2px solid rgb(119, 0, 255);
+}
+/*Inicio estilos footer-----------------------------------------*/
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -233,7 +298,7 @@ a{
 .footerRight{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*Fin estilos footer*/
+/*Fin estilos footer--------------------------------------*/
 @media only screen and (min-width:600px){
     .parrafo{
         display: block;
@@ -260,7 +325,7 @@ a{
     .seccionImg img{
         margin-top: 20px;
     }
-    /*Informacion*/
+    /*Informacion----------------------------------------*/
     .infoText h1{
         font-size: 1.4rem;
         font-weight: 500;
@@ -268,6 +333,7 @@ a{
     .infoText p{
         font-size: 1rem;
     }
+    /*Footer--------------------------------------------*/
     .footerLeft h5{
         width: 70%;
         text-align: center;
@@ -299,7 +365,7 @@ a{
     .navbar ul{
         margin-top: 1rem;
     }
-    /*index*/
+    /*index-------------------------------------------------*/
     .section{
         display: flex;
         justify-content: space-evenly;
@@ -346,7 +412,7 @@ a{
         margin-top: 5px;
         color: blueviolet;
     }
-    /*Informacion*/
+    /*Informacion-----------------------------------------*/
     .infoImg img{
         width: 400px;
         margin-top: 10px;
@@ -391,6 +457,7 @@ a{
         justify-content: space-around;
         align-items: center;
     }
+    /*Inicio informacion------------------------------*/
     .informacion{
         display: flex;
         flex-wrap: nowrap;
@@ -405,4 +472,5 @@ a{
     .articleInfo{
         width: 55%;
     }
+    /*Fin informacion----------------------------------*/
 }
