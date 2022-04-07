@@ -272,6 +272,54 @@ a{
     border: 2px solid rgb(119, 0, 255);
     cursor:pointer;
 }
+/*Fin main contacto-----------------------------*/
+
+/*Inicio main procesos-----------------------------*/
+.containerProcesos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.articleProcesos{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 20px;
+}
+.articleProcesos h4{
+    font-weight: 500;
+    color: #7a7672;
+    font-size: 1.2rem;
+}
+.negrita{
+    font-weight: bold;
+    color: rgb(119, 0, 255);
+}
+
+.articleProcesos p{
+    color: #7a7672;
+    font-size: 0.8rem;
+}
+.articleProcesos i{
+    font-size: 1.2rem;
+    padding: 8px;
+    border: 1px solid #e4e2de;
+    background-color: #f0efec;
+    color: rgb(119, 0, 255)!important;
+    transform: rotate(-30deg);
+    transition: all .3s; 
+}
+.articleProcesos:hover i{
+    transform: rotate(0deg);
+}
+.imgProcesos img{
+    width: 300px;
+    margin-bottom: 10px;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+}
 /*Inicio estilos footer-----------------------------------------*/
 .footer{
     display: flex;
@@ -388,7 +436,7 @@ a{
         justify-content: center;
         align-items: center;
     }
-    .section2 h2, p{
+    .section2 h2{
         font-size: 1.9rem;
         width: 70%;
     }
@@ -420,9 +468,8 @@ a{
         margin-top: 10px;
     }
     .infoText{
-        padding-left: 70px;
-        width: 100%;
-        margin-left: 80px;
+        padding-left: 20px;
+        width: 80%;
     }
     .footer{
         display: flex;
@@ -463,10 +510,11 @@ a{
     .informacion{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-around;
     }
     .infoText{
         width: 50%;
+        margin-left: 20px;
     }
     .infoImg img{
         margin-right: 50px;
