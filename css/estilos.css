@@ -465,7 +465,7 @@ hr{
     .parrafo{
         display: block;
     }
-    /*Indec*/
+    /*Index*/
     .sectionText{
         display: flex;
         flex-direction: column;
@@ -479,6 +479,9 @@ hr{
         text-align: center;
         font-size: 0.9rem;
         margin-top: 10px;
+        padding: 20px;
+    }
+    .section2 h2{
         padding: 10px;
     }
     .articleContainer{
@@ -507,7 +510,7 @@ hr{
         align-items: center;
     }
 }
-@media only screen and (min-width:715px){
+@media only screen and (min-width:703px){
     #header{
         height: 5rem;
         display: flex;
@@ -554,6 +557,7 @@ hr{
     }
     .section2 p{
         font-size: 1rem;
+        width: 70%;
     }
     .articleContainer{
         display: grid;
@@ -598,6 +602,15 @@ hr{
     .borrado{
         display: block;
     }
+    .containerGrid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 80px 1fr 1fr auto;
+        grid-template-areas: "header header header header"
+                             "main main main main"
+                             "main main main main"
+                             "footer footer footer footer";
+    }
     .footerLeft{
         display: flex;
         justify-content: center;
@@ -614,9 +627,19 @@ hr{
         font-size: 0.9rem;
     }
     .footer{
+        grid-area: footer;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    #header{
+        grid-area: header;
+    }
+    #main{
+        grid-area: main;
+    }
+    .mainFormulario{
+        height: 80vh;
     }
     /*Inicio informacion------------------------------*/
     .informacion{
