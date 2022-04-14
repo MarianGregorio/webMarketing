@@ -499,6 +499,9 @@ hr{
     .infoText p{
         font-size: 1rem;
     }
+    .mainFormulario{
+        height: 70vh;
+    }
     /*Footer--------------------------------------------*/
     .footerLeft h5{
         width: 70%;
