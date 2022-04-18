@@ -1,0 +1,285 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.borrado {
+  display: none; }
+
+@keyframes movimiento {
+  from {
+    transform: translate(300px); }
+  to {
+    transform: translate(0); } }
+
+@keyframes movimiento2 {
+  from {
+    transform: translate(-300px); }
+  to {
+    transform: translate(0); } }
+
+/*>>>>>>>ESTILOS HEADER Y MENU<<<<<<<<<<<*/
+#header {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10000; }
+  #header .logo {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px; }
+  #header .navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 10px; }
+    #header .navbar ul li {
+      margin: 0 5px; }
+      #header .navbar ul li a {
+        padding: 5px 10px;
+        color: #000; }
+        #header .navbar ul li a:hover {
+          border-bottom: 2px solid #7700ff; }
+    #header .navbar ul .navContacto a {
+      background-color: #7700ff;
+      border-radius: 2rem;
+      color: #fff !important; }
+      #header .navbar ul .navContacto a:hover {
+        border: none !important; }
+
+/*>>>>>>>ESTILOS FOOTER<<<<<<<<<<<*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .footer .footerLeft {
+    text-align: center;
+    margin-top: 1.1rem; }
+    .footer .footerLeft .footerLogo {
+      font-size: 2rem; }
+    .footer .footerLeft h5 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    .footer .footerLeft ul {
+      display: flex;
+      justify-content: center;
+      margin: 0 10px; }
+      .footer .footerLeft ul li {
+        margin: 0 10px; }
+  .footer .footerRight {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+/*>>>>>>>ESTILOS INFORMACION.HTML<<<<<<<<<<<*/
+.informacion {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .informacion .infoText {
+    text-align: justify;
+    width: 70%;
+    margin-top: 20px; }
+    .informacion .infoText p {
+      font-size: 0.8rem;
+      margin-top: 10px; }
+    .informacion .infoText h1 {
+      font-size: 1.2rem;
+      border-top: 2px solid #7700ff;
+      width: 70%; }
+  .informacion .infoImg img {
+    width: 300px;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-duration: 3s; }
+
+.informacion2 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 20px;
+  padding: 20px; }
+  .informacion2 h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px; }
+  .informacion2 .containerArt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .informacion2 .containerArt .articleInfo {
+      background-color: #7700ff;
+      color: #aaa7a7;
+      margin: 10px 0px;
+      width: 70%;
+      box-shadow: 5px 5px 3px #aaa7a7; }
+      .informacion2 .containerArt .articleInfo h4 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 5px; }
+
+/*>>>>>>>ESTILOS FORMULARIO<<<<<<<<<<<*/
+.formulario {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 350px;
+  width: 280px;
+  background-color: #353435;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 5px #aaa7a7;
+  border: 1px solid #aaa7a7; }
+  .formulario .centrado {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #aaa7a7;
+    font-weight: 500;
+    padding-top: 5px; }
+  .formulario .formText {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #e4e2de;
+    font-size: 1rem;
+    font-weight: 200; }
+    .formulario .formText .formTamaño {
+      width: 90%;
+      height: 1.8rem;
+      background-color: #ada9a6; }
+    .formulario .formText .formTextEnviar {
+      color: #fff;
+      padding: 5px 20px;
+      letter-spacing: 1px;
+      background-color: #7700ff;
+      border: 2px solid #7700ff;
+      cursor: pointer; }
+
+/*>>>>>>>ESTILOS CONTACTO.HTML<<<<<<<<<<<*/
+.titleFormulario {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  text-align: end;
+  font-weight: 600;
+  width: 65%;
+  border-bottom: 4px solid #7700ff;
+  padding-top: 10px; }
+
+.containerContacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px; }
+  .containerContacto .imgContacto img {
+    width: 300px;
+    animation-name: movimiento2;
+    animation-iteration-count: initial;
+    animation-duration: 3s; }
+
+/*>>>>>>>ESTILOS PROCESOS.HTML<<<<<<<<<<<*/
+.containerProcesos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .containerProcesos .articleProcesos {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 20px; }
+    .containerProcesos .articleProcesos h4 {
+      font-weight: 500;
+      font-size: 1.2rem; }
+      .containerProcesos .articleProcesos h4 .negrita {
+        font-weight: bold;
+        color: #7700ff; }
+    .containerProcesos .articleProcesos p {
+      color: #7a7672;
+      font-size: 0.8rem; }
+    .containerProcesos .articleProcesos i {
+      font-size: 1.2rem;
+      padding: 8px;
+      border: 1px solid #e4e2de;
+      background-color: #f0efec;
+      color: #7700ff !important;
+      transform: rotate(-30deg);
+      transition: all .3s; }
+      .containerProcesos .articleProcesos i:hover {
+        transform: rotate(0deg); }
+  .containerProcesos .imgProcesos img {
+    width: 300px;
+    margin-bottom: 10px;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-duration: 3s; }
+
+#main {
+  background-image: linear-gradient(to right, #fff, #aaa7a7); }
+
+/*>>>>>>>>>>ESTILOS MAIN.INDEX<<<<<<<<<<<<<*/
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .section .sectionText h1 {
+    font-size: 1.4rem;
+    margin-top: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 500; }
+  .section .sectionText a {
+    color: #fff;
+    background-color: blueviolet;
+    padding: 5px 10px;
+    border-radius: 2rem;
+    font-size: 0.8rem; }
+  .section .seccionImg {
+    text-align: center; }
+    .section .seccionImg img {
+      width: 300px;
+      animation-name: movimiento;
+      animation-iteration-count: initial;
+      animation-duration: 3s; }
+
+.section2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .section2 h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px; }
+  .section2 .articleContainer {
+    display: grid;
+    grid-template-areas: "articulo1 articulo2" "articulo3 articulo4";
+    text-align: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 20px; }
+    .section2 .articleContainer .articulo1 {
+      grid-area: articulo1; }
+    .section2 .articleContainer .articulo2 {
+      grid-area: articulo2; }
+    .section2 .articleContainer .articulo3 {
+      grid-area: articulo3; }
+    .section2 .articleContainer .articulo4 {
+      grid-area: articulo4; }
+    .section2 .articleContainer .article {
+      font-size: 1rem;
+      color: #7a7672;
+      height: 4rem; }
+      .section2 .articleContainer .article h4 {
+        margin-top: 5px; }
+      .section2 .articleContainer .article i {
+        font-size: 1.4rem;
+        margin-top: 5px;
+        color: blueviolet; }

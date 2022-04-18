@@ -1,0 +1,16 @@
+@keyframes movimiento{
+    from{
+        transform: translate(300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+@keyframes movimiento2{
+    from{
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
