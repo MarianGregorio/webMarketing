@@ -47,6 +47,10 @@
             font-size: 1rem;
         }
     }
+    /*>>>>>>>>>>>>>>>>>>>CONTACTO<<<<<<<<<<<<<<<<<<<<*/
+    .mainFormulario{
+        height: 70vh;
+    }
     /*>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<*/
     .footerLeft{
         display: flex;
@@ -173,6 +177,23 @@
             font-size: 2rem;
         }
     }
+    /*>>>>>>>>>>>>>>>>>>>CONTACTO<<<<<<<<<<<<<<<<<<<<*/
+    .mainFormulario{
+        height: 80vh;
+        .containerContacto{
+            margin-top: 50px;
+            justify-content: space-evenly;
+            .imgContacto{
+                img{
+                    width: $ancho-imagen-desktop;
+                }
+            }
+        }
+        .titleFormulario{
+            font-size: 1.7rem;
+            width: 60%;
+        }
+    }
     /*>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<*/
     .footer{
         display: flex;
@@ -184,6 +205,89 @@
             h5{
                 font-size: 1rem;
             }
+        }
+    }
+}
+@media only screen and (min-width:1000px){
+    .borrado{
+        display: block;
+    }
+    .containerGrid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 80px 1fr 1fr auto;
+        grid-template-areas: "header header header header"
+                             "main main main main"
+                             "main main main main"
+                             "footer footer footer footer";
+    }
+    /*>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<*/
+    .footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .footerLeft{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 30%;
+            h5{
+                text-align: justify;
+            }
+        }
+        .footerCenter{
+            font-size: 0.9rem;
+        }
+        .footerRight{
+            font-size: 0.9rem;
+        }
+    }
+    /*>>>>>>>>>>>>>>>>>>>LAYOUT<<<<<<<<<<<<<<<<<<<<*/
+    #header{
+        grid-area: header;
+    }
+    #main{
+        grid-area: main;
+    }
+    /*>>>>>>>>>>>>>>>>>>>INFORMACION<<<<<<<<<<<<<<<<<<<<*/
+    .informacion{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        .infoText{
+            width: 50%;
+            margin-left: 20px;
+            h1{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .infoImg{
+            img{
+                margin-right: 50px;
+            }
+        }
+    }
+    .articleInfo{
+        width: 55%;
+    }
+    /*>>>>>>>>>>>>>>>>>>>PROCESOS<<<<<<<<<<<<<<<<<<<<*/
+    .articleProcesos{
+        h4{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    /*>>>>>>>>>>>>>>>>>>>CONTACTO<<<<<<<<<<<<<<<<<<<<*/
+    .mainFormulario{
+        height: 80vh;
+        .titleFormulario{
+            width: 55%;
         }
     }
 }
