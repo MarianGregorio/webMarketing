@@ -2,6 +2,11 @@
 @import "../utilities/variables";
 //>>>>>>>>Archivos importados<<<<<<<<<//
 
+//>>>>>>>>>>>>>MAIN.INDEX<<<<<<<<<<<<//
+#main{
+    background-image: $gradiente;
+}
+
 /*>>>>>>>>>>ESTILOS MAIN.INDEX<<<<<<<<<<<<<*/
 .section{
     display: flex;
@@ -27,7 +32,7 @@
     .seccionImg{
         text-align: center;
         img{
-            width: $ancho-imagen-mobile;
+            width: $ancho-imagen;
             animation-name: movimiento;
             animation-iteration-count: initial;
             animation-duration: 3s;

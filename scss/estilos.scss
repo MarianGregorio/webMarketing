@@ -1,6 +1,7 @@
 @import "base/reset";
 @import "utilities/variables";
 @import "utilities/transform";
+@import "utilities/mixins";
 @import "layout/header";
 @import "layout/footer";
 @import "views/home";
@@ -10,7 +11,3 @@
 @import "views/nosotros";
 @import "layout/media";
 
-//>>>>>>>>>>>>>MAIN.INDEX<<<<<<<<<<<<//
-#main{
-    background-image: $gradiente;
-}
