@@ -16,9 +16,7 @@
     @extend %borde;
 }
 .containerContacto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex-around;
     align-items: center;
     margin-top: 20px;
     .imgContacto{
