@@ -25,6 +25,10 @@ a {
   to {
     transform: translate(0); } }
 
+/* >>>>>>>>>>>>>>>>Etiquetas que comparten el extend<<<<<<<<<<<<<<<<<<<*/
+.titleFormulario, .titleNosotros .texto h1 {
+  border-bottom: 4px solid #7700ff; }
+
 /*>>>>>>>ESTILOS HEADER Y MENU<<<<<<<<<<<*/
 #header {
   height: 6rem;
@@ -56,7 +60,7 @@ a {
     #header .navbar ul .navContacto a {
       background-color: #7700ff;
       border-radius: 2rem;
-      color: #fff !important; }
+      color: #fff; }
       #header .navbar ul .navContacto a:hover {
         border: none !important; }
 
@@ -233,7 +237,6 @@ a {
   text-align: end;
   font-weight: 600;
   width: 65%;
-  border-bottom: 4px solid #7700ff;
   padding-top: 10px; }
 
 .containerContacto {
@@ -305,7 +308,6 @@ a {
       font-weight: 600;
       text-transform: uppercase;
       margin-top: 30px;
-      border-bottom: 4px solid #7700ff;
       padding-bottom: 10px; }
     .titleNosotros .texto p {
       font-size: 1rem;

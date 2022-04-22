@@ -1,6 +1,7 @@
 //>>>>>>>>Archivos importados<<<<<<<<<//
 @import "../utilities/variables";
 @import "../layout/forms";
+
 //>>>>>>>>Archivos importados<<<<<<<<<//
 
 //>>>>>>>ESTILOS CONTACTO.HTML<<<<<<<<<<<//
@@ -11,8 +12,8 @@
     text-align: end;
     font-weight: 600;
     width: 65%;
-    border-bottom: 4px solid $color-principal;
     padding-top: 10px;
+    @extend %borde;
 }
 .containerContacto{
     display: flex;

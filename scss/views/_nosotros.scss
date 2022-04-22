@@ -1,5 +1,6 @@
 //>>>>>>>>Archivos importados<<<<<<<<<//
 @import "../utilities/variables";
+
 //>>>>>>>>Archivos importados<<<<<<<<<//
 
 //>>>>>>>ESTILOS NOSOTROS.HTML<<<<<<<<<<<//
@@ -24,8 +25,8 @@
             font-weight: 600;
             text-transform: uppercase;
             margin-top: 30px;
-            border-bottom: 4px solid rgb(119, 0, 255);
             padding-bottom: 10px;
+            @extend %borde;
         }
         p{
             font-size: 1rem;

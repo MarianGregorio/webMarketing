@@ -1,5 +1,6 @@
 //>>>>>>>>Archivos importados<<<<<<<<<//
 @import "../utilities/variables";
+@import "../utilities/maps";
 //>>>>>>>>Archivos importados<<<<<<<<<//
 
 //>>>>>>>ESTILOS HEADER Y MENU<<<<<<<<<<<//
@@ -38,9 +39,9 @@
         }
         .navContacto{
             a{
-                background-color: $color-principal;
-                border-radius: 2rem;
-                color:#fff !important;
+                background-color: map-get($map: $navegacion, $key:bg-navegacion );
+                border-radius: map-get($map: $navegacion , $key:radius-navegacion );
+                color:map-get($map: $navegacion, $key:color-navegacion );
                 &:hover{
                     border: none !important;
                 }

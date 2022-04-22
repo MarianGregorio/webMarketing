@@ -8,3 +8,23 @@
         padding: 5px 10px;
     }
 }
+@mixin flex-around{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin flex-no-around{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+@mixin flex-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flex-evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

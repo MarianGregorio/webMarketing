@@ -1,0 +1,14 @@
+@import "variables";
+// maps: boton de navegacion y boton de contenido principal
+$navegacion:(
+    bg-navegacion: $color-principal,
+    radius-navegacion: 2rem,
+    color-navegacion:#fff,
+);
+$contenido:(
+    bg-contenido: $color-secundario,
+    radius-contenido: 2rem,
+    color-contenido:#fff,
+    p-contenido: 5px 10px,
+    fs-contenido:0.8rem,
+);
