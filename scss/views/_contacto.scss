@@ -19,6 +19,7 @@
     @include flex-around;
     align-items: center;
     margin-top: 20px;
+    padding-bottom: 20px;
     .imgContacto{
         img{
             width: $ancho-imagen;
@@ -26,5 +27,8 @@
             animation-iteration-count: initial;
             animation-duration: 3s;
         }
+    }
+    .padreFormulario{
+        width: $ancho-imagen;
     }
 }
