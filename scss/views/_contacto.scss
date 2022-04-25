@@ -1,0 +1,30 @@
+//>>>>>>>>Archivos importados<<<<<<<<<//
+@import "../utilities/variables";
+@import "../layout/forms";
+
+//>>>>>>>>Archivos importados<<<<<<<<<//
+
+//>>>>>>>ESTILOS CONTACTO.HTML<<<<<<<<<<<//
+/*>>>>>>>ESTILOS CONTACTO.HTML<<<<<<<<<<<*/
+.titleFormulario{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    text-align: end;
+    font-weight: 600;
+    width: 65%;
+    padding-top: 10px;
+    @extend %borde;
+}
+.containerContacto{
+    @include flex-around;
+    align-items: center;
+    margin-top: 20px;
+    .imgContacto{
+        img{
+            width: $ancho-imagen;
+            animation-name: movimiento2;
+            animation-iteration-count: initial;
+            animation-duration: 3s;
+        }
+    }
+}

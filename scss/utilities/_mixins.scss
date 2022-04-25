@@ -1,0 +1,30 @@
+@mixin cardbuttom($color){
+    background-color: $color;
+    @if $color == rgb(92, 9, 187){
+        color: #fff;
+        padding: 5px 15px;
+    } @else{
+        color: #fff;
+        padding: 5px 10px;
+    }
+}
+@mixin flex-around{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin flex-no-around{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+@mixin flex-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flex-evenly{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
