@@ -143,11 +143,11 @@ a {
     .section2 .articleContainer .articulo4 {
       grid-area: articulo4; }
     .section2 .articleContainer .article {
-      font-size: 0.8rem;
       color: #7a7672;
       height: 4rem; }
       .section2 .articleContainer .article h3 {
-        margin-top: 5px; }
+        margin-top: 5px;
+        font-size: 0.8rem; }
       .section2 .articleContainer .article i {
         font-size: 1.4rem;
         margin-top: 5px;
@@ -208,7 +208,7 @@ a {
   text-align: end;
   font-weight: 600;
   width: 65%;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 .containerContacto {
   display: flex;
@@ -340,6 +340,11 @@ a {
         transition: all .3s; }
         .cardSection .cardPerfil .cardNombre img:hover {
           transform: rotate(0deg); }
+      .cardSection .cardPerfil .cardNombre h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+        margin-top: 10px;
+        line-height: none; }
     .cardSection .cardPerfil hr {
       width: 80%;
       height: 4px;
