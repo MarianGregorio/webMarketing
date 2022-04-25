@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -45,23 +44,26 @@ a {
     text-align: center;
     font-size: 2rem;
     margin-top: 10px; }
-  #header .navbar ul {
+    #header .logo a {
+      color: #7700ff; }
+  #header .navegacion ul {
     display: flex;
     justify-content: center;
     margin: 10px;
-    padding-bottom: 10px; }
-    #header .navbar ul li {
+    padding-bottom: 10px;
+    padding-left: 0rem; }
+    #header .navegacion ul li {
       margin: 0 5px; }
-      #header .navbar ul li a {
+      #header .navegacion ul li a {
         padding: 5px 10px;
         color: #000; }
-        #header .navbar ul li a:hover {
+        #header .navegacion ul li a:hover {
           border-bottom: 2px solid #7700ff; }
-    #header .navbar ul .navContacto a {
+    #header .navegacion ul .navContacto a {
       background-color: #7700ff;
       border-radius: 2rem;
       color: #fff; }
-      #header .navbar ul .navContacto a:hover {
+      #header .navegacion ul .navContacto a:hover {
         border: none !important; }
 
 /*>>>>>>>ESTILOS FOOTER<<<<<<<<<<<*/
@@ -73,14 +75,16 @@ a {
     text-align: center;
     margin-top: 1.1rem; }
     .footer .footerLeft .footerLogo {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #7700ff; }
     .footer .footerLeft .footerTitle {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
       font-size: 0.8rem; }
     .footer .footerLeft ul {
       display: flex;
       justify-content: center;
-      margin: 10px 0; }
+      margin: 10px 0;
+      padding-left: 0rem; }
       .footer .footerLeft ul li {
         margin: 0 10px; }
   .footer .footerRight {
@@ -139,11 +143,11 @@ a {
     .section2 .articleContainer .articulo4 {
       grid-area: articulo4; }
     .section2 .articleContainer .article {
-      font-size: 0.8rem;
       color: #7a7672;
       height: 4rem; }
       .section2 .articleContainer .article h3 {
-        margin-top: 5px; }
+        margin-top: 5px;
+        font-size: 0.8rem; }
       .section2 .articleContainer .article i {
         font-size: 1.4rem;
         margin-top: 5px;
@@ -197,39 +201,6 @@ a {
         font-weight: 500;
         margin-bottom: 5px; }
 
-/*>>>>>>>ESTILOS FORMULARIO<<<<<<<<<<<*/
-.formulario {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  height: 350px;
-  width: 280px;
-  background-color: #353435;
-  margin-bottom: 10px;
-  box-shadow: 3px 3px 5px #aaa7a7;
-  border: 1px solid #aaa7a7; }
-  .formulario .centrado {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #aaa7a7;
-    font-weight: 500;
-    padding-top: 5px; }
-  .formulario .formText {
-    margin-top: 15px;
-    margin-left: 15px;
-    color: #e4e2de;
-    font-size: 1rem;
-    font-weight: 200; }
-    .formulario .formText .formTamaño {
-      width: 90%;
-      height: 1.8rem;
-      background-color: #ada9a6; }
-    .formulario .formText .formTextEnviar {
-      color: #fff;
-      padding: 5px 20px;
-      letter-spacing: 1px;
-      background-color: #7700ff;
-      border: 2px solid #7700ff;
-      cursor: pointer; }
-
 /*>>>>>>>ESTILOS CONTACTO.HTML<<<<<<<<<<<*/
 .titleFormulario {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -237,19 +208,22 @@ a {
   text-align: end;
   font-weight: 600;
   width: 65%;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 .containerContacto {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-bottom: 20px; }
   .containerContacto .imgContacto img {
     width: 300px;
     animation-name: movimiento2;
     animation-iteration-count: initial;
     animation-duration: 3s; }
+  .containerContacto .padreFormulario {
+    width: 300px; }
 
 /*>>>>>>>ESTILOS PROCESOS.HTML<<<<<<<<<<<*/
 .containerProcesos {
@@ -366,6 +340,11 @@ a {
         transition: all .3s; }
         .cardSection .cardPerfil .cardNombre img:hover {
           transform: rotate(0deg); }
+      .cardSection .cardPerfil .cardNombre h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+        margin-top: 10px;
+        line-height: none; }
     .cardSection .cardPerfil hr {
       width: 80%;
       height: 4px;
@@ -440,7 +419,7 @@ a {
       font-size: 2.5rem;
       margin-top: 0;
       color: #7700ff; }
-    #header .navbar ul {
+    #header .navegacion ul {
       margin-top: 1rem; }
   /*>>>>>>>>>>>>>>>>>>>INDEX<<<<<<<<<<<<<<<<<<<<*/
   .section {
@@ -544,7 +523,8 @@ a {
       .footer .footerLeft .footerTitle {
         text-align: justify; }
     .footer .footerCenter {
-      font-size: 0.9rem; }
+      font-size: 0.9rem;
+      margin-top: 20px; }
     .footer .footerRight {
       font-size: 0.9rem; }
   /*>>>>>>>>>>>>>>>>>>>LAYOUT<<<<<<<<<<<<<<<<<<<<*/
