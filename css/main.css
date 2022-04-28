@@ -492,7 +492,7 @@ a {
     font-size: 2rem; }
   /*>>>>>>>>>>>>>>>>>>>CONTACTO<<<<<<<<<<<<<<<<<<<<*/
   .mainFormulario {
-    height: 80vh; }
+    height: 100vh; }
     .mainFormulario .containerContacto {
       margin-top: 50px;
       justify-content: space-evenly; }
@@ -564,7 +564,5 @@ a {
   .containerProcesos .articleProcesos p {
     font-size: 1rem; }
   /*>>>>>>>>>>>>>>>>>>>CONTACTO<<<<<<<<<<<<<<<<<<<<*/
-  .mainFormulario {
-    height: 80vh; }
-    .mainFormulario .titleFormulario {
-      width: 55%; } }
+  .mainFormulario .titleFormulario {
+    width: 55%; } }
